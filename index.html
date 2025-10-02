@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <nav id="navbar">
+        <div class="logo">
+            Přehlídka <span class="text-primary">Aut</span>
+        </div>
+        <ul>
+            <li><a href="uvod.html" target="_blank">Úvod</a></li>
+            <li><a href="o_me.html" target="_blank">O mě</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <div class="centered">
             <h1>Přehlídka aut</h1>
@@ -45,3 +55,118 @@
     </div>
 </body>
 </html>
+
+<style>
+body {
+    background: linear-gradient(120deg, #283eeb 0%, #6ca0f7 100%);
+    color: #f8f8f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    letter-spacing: 0.01em;
+}
+
+#navbar {
+    width: 100%;
+    background: #222bfa;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    box-shadow: 0 2px 12px rgba(40,62,235,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+.text-primary {
+    color: #ffd700;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1.08em;
+}
+
+#navbar ul li a:hover {
+    color: #ffd700;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.centered {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: 48px auto 0 auto;
+    padding: 36px 28px;
+    background: #d90429;      /* ČERVENÁ barva "A4 stránky" */
+    color: #fff;              /* Světlý text pro kontrast */
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border: 1px solid #a0021a;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-top: 0;
+}
+
+img {
+    border-radius: 18px;
+    margin: 16px 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, filter 0.3s;
+    vertical-align: middle;
+    filter: grayscale(10%);
+}
+
+img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(255,215,0,0.25);
+    filter: grayscale(0%) brightness(1.1);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ffd700;
+    margin: 32px 0;
+    width: 80%;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #ffd700;
+}
+</style>
