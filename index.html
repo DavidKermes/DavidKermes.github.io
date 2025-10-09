@@ -2,18 +2,19 @@
 <html lang="cs">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přehlídka aut</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav id="navbar">
-        <div class="logo">
-            Přehlídka <span class="text-primary">Aut</span>
-        </div>
+        <div class="logo">Přehlídka <span class="text-primary">Aut</span></div>
         <ul>
-            <li><a href="uvod.html" target="_blank">Úvod</a></li>
-            <li><a href="o_me.html" target="_blank">O mě</a></li>
-            <li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+            <li><a href="#"><i class="fa fa-home"></i> Úvod</a></li>
+            <li><a href="#"><i class="fa fa-user"></i> O mě</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i> Kontakt</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -58,9 +59,9 @@
 
 <style>
 body {
-    background: linear-gradient(120deg, #283eeb 0%, #6ca0f7 100%);
-    color: #f8f8f8;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
     letter-spacing: 0.01em;
@@ -121,11 +122,10 @@ body {
 .centered {
     position: relative;
     z-index: 1;
-    max-width: 850px;
-    margin: 48px auto 0 auto;
-    padding: 36px 28px;
-    background: #d90429;      /* ČERVENÁ barva "A4 stránky" */
-    color: #fff;              /* Světlý text pro kontrast */
+    max-width: 800px;
+    margin: 32px auto 0 auto;
+    padding: 24px 18px;
+    background: rgba(255,255,255,0.85);
     border-radius: 24px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     border: 1px solid #a0021a;
