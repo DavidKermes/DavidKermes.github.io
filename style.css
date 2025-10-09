@@ -133,7 +133,11 @@ hr {
     opacity: 0.7;
 }
 
-/* Responzivita pro mobily */
+footer {
+    color: #fff;
+}
+
+
 @media (max-width: 700px) {
     #navbar {
         flex-direction: column;
