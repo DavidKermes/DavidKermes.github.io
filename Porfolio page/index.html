@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David Kermes — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Čau, jsem David</h1>
+      <p>Student    </p>
+    </section>
+
+  
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Vybraný projekt — Přehlídka aut</h2>
+
+      <div class="projects-grid">
+ 
+  <a href="../html1/index.html" class="project project-tile" target="_blank">
+          <p class="project-title"><span class="code">&lt;</span> Přehlídka aut <span class="code">&#47;&gt;</span></p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Spolupracujme</h2>
+        <p>Napiš mi — rád se domluvím</p>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="https://github.com/DavidKermes" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:david.kermes09@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> david.kermes09@gmail.com</a>
+        <a href="tel:+420732456053" class="btn contact-details"><i class="fas fa-mobile-alt"></i> +420 732 456 053</a>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <p> &copy; 2025 David Kermes — Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
+  </body>
+</html>
